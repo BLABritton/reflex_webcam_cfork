@@ -1,3 +1,0 @@
-reflex>=0.5.0
-pillow
-reflex-webcam

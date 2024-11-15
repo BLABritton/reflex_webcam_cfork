@@ -6,13 +6,13 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "reflex-webcam"
-version = "0.0.6"
-description = "Reflex custom component webcam"
+name = "reflex-webcam-cfork"
+version = "0.0.1"
+description = "Fork of reflex-webcam"
 readme = "README.md"
 license = { text = "Apache-2.0" }
 requires-python = ">=3.8"
-authors = [{ name = "Tom Gotsman", email = "tgotsman12@gmail.com" }]
+authors = [{ name = "Benjamin-Lee Britton", email = "benjamin@benjaminbritton.co.uk" }]
 keywords = [
     "reflex",
     "reflex-custom-components"]
@@ -24,10 +24,6 @@ dependencies = [
 classifiers = [
   "Development Status :: 4 - Beta",
 ]
-
-[project.urls]
-Homepage = "https://github.com/tgberkeley/reflex-webcam"
-Repository = "https://github.com/tgberkeley/reflex-webcam"
 
 [project.optional-dependencies]
 dev = ["build", "twine"]

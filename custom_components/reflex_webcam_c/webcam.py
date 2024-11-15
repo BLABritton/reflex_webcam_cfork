@@ -25,16 +25,14 @@ class Webcam(rx.Component):
     # The prop names may be defined in `camelCase` as well.
 
     # enable/disable audio
-    audio: Var[bool] = False
+    audio: Var[bool] = True
 
     # format of screenshot
     screenshot_format: Var[str] = "image/jpeg"  # type: ignore
-
     # show camera preview and get the screenshot mirrored
     mirrored: Var[bool] = False
-
-    # allow passing video constraints such as facingMode
-    video_constraints: Var[dict] = {}
+    video_constraints: Var[dict] = {}  # Video constraints (e.g., resolution, facingMode)
+    audio_constraints: Var[dict] = {}  # Audio constraints (e.g., deviceId for microphone)
 
     special_props: set[Var] = [Var.create_safe("muted", _var_is_string=False)]
 
