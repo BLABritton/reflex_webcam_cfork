@@ -120,7 +120,7 @@ def start_recording(
         if (mediaRecorderRef.current != null) {{
             mediaRecorderRef.current.stop()
         }}
-        mediaRecorderRef.current = new MediaRecorder(refs['ref_{ref}'].current.stream, {{mimeType: 'video/webm'}})
+        mediaRecorderRef.current = new MediaRecorder(refs['ref_{ref}'].current.stream, {{mimeType: 'video/mp4; codecs="avc1.424028, mp4a.40.2"'}})
         mediaRecorderRef.current.addEventListener(
           "dataavailable",
           handleDataAvailable,
